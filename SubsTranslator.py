@@ -49,8 +49,8 @@ for currentSrt in srt.parse(fin) :
 	finalSrt += str(currentSrt.index) + '\n'
 	finalSrt += str(currentSrt.start).replace('.', ',')[:-3] + " --> " + str(currentSrt.end).replace('.', ',')[:-3] +  '\n'
 	finalSrt += translator.translate_text(currentSrt.content.replace('\n', ' '), target_lang = outputLanguage).text + '\n\n'
-print("All ready! Enjoy the movie :)")
 
 fout.write(finalSrt)
 fin.close()
 fout.close()
+print("All ready! Enjoy the movie :)")
