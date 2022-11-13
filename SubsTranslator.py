@@ -5,7 +5,7 @@ import srt
 print("****************************")
 print("* Welcome to SubsTransator *")
 print("****************************")
-print("\nCase sensitive! (accepted example : EL or el)")
+print("\n(Accepted example : EL or el)")
 print('''Supported Languages : 
     BG - Bulgarian
     CS - Czech
@@ -41,7 +41,7 @@ outputLanguage = input("\nTo wich language : ").upper()
 srtName = os.path.basename(inputSrtPath)
 fin = open(inputSrtPath, 'r+')
 fout = open(srtName[:-4] + "_greek" + srtName[-4:], 'w')
-translator = deepl.Translator("your deepl api key")
+translator = deepl.Translator("1d228545-8e74-7226-0bf5-96a23c617caf:fx")
 finalSrt = ""
 
 print("Perfect! Please be patient while we are doing our magic!...")
