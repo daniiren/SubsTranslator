@@ -41,7 +41,7 @@ outputLanguage = input("\nTo wich language : ").upper()
 srtName = os.path.basename(inputSrtPath)
 fin = open(inputSrtPath, 'r+')
 fout = open(srtName[:-4] + "_greek" + srtName[-4:], 'w')
-translator = deepl.Translator("1d228545-8e74-7226-0bf5-96a23c617caf:fx")
+translator = deepl.Translator("You DeepL API Key...")
 finalSrt = ""
 
 print("Perfect! Please be patient while we are doing our magic!...")
